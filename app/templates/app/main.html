@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container py-5 px-5">
-Main page
-Heroku test
+    <form action="https://api.telegram.org/bot874748470:AAHeE0Yj74u_RV9KfrMnGlKwvFhQ4SrC5wg/sendmessage" enctype='multipart/form-data' method="post">
+        <p>chat id</p>
+        <input type="text" name="chat_id" value="263172597">
+        <input type="text" name="text" value="">
+        <input type="submit" value="Отправить">
+    </form>
 </div>
 {% endblock %}
+
+<!--https://api.telegram.org/bot874748470:AAHeE0Yj74u_RV9KfrMnGlKwvFhQ4SrC5wg/sendmessage?chat_id=263172597&text=hello-->
